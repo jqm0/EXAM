@@ -86,26 +86,28 @@ public class Tester {
 				System.out.println(">> School name is :" + school1.getName());
 				System.out.println(">> School id is :" + school1.getId());
 				System.out.println("=========== |Departments List| ============");
-
+// First loop to Display all detals about each department
 				for (Department department : departmentA) {
 					String ANSI_CYAN = "\u001B[36m";
 					System.out.println(ANSI_CYAN +"=========== |>> Department Details <<| ============");
 					System.out.println("============= Department name is " + department.getName() + " ============");
 					System.out.println("============= Department Size is " + department.getdSize() +" ============");
 					System.out.println("=========== \\ Teacher List // ============");
-
+//Second loop to Display detals about each teacher
 					for (Teacher t : department.teacherList) {
 						String ANSI_YELLOW = "\u001B[33m";
 						System.out.println(ANSI_YELLOW +"================== Teacher Details =====================");
 						System.out.println(">> Teacher name is : " + t.getName());
 						System.out.println(">> Teacher id is : :" + t.getId());
 						System.out.println("==================### Student List ###=====================");
+//Third loop to Display detals about each Student with same teacher
 						for (Student s : t.studentList) {
 							 String ANSI_RED = "\u001B[31m";
 							System.out.println(ANSI_RED +"==================>> Student Details <<=====================");
 							System.out.println(">> Student name is : " + s.getName());
 							System.out.println(">> Student id is : :" + s.getId());
 							System.out.println("==================###... Course List ...###=====================");
+//4th loop to Display detals about each Student Courses
 							for (Course c : s.courseList) {
 							String ANSI_CYAN = "\u001B[36m";
 
