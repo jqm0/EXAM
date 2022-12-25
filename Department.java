@@ -7,9 +7,15 @@ public class Department {
 	private int Size;
 	private String location;
 	Teacher teacher1 = new Teacher();
-//arraylist of teachers object
 	ArrayList<Teacher> teacherList = new ArrayList<Teacher>();
-// setter and getter for instance varibales
+
+	public Department() {
+	
+		this.name = "Computer Science";
+		this.Size = 20;
+		this.location = "North";
+	}
+
 	public String getName() {
 		return name;
 	}
