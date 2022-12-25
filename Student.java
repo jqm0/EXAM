@@ -6,8 +6,9 @@ public class Student {
 	private String name ;
 	private int id ;
 	Course course1 = new Course();
+//array list of courses object
 	ArrayList<Course> courseList = new ArrayList<Course>();
-
+// ====== setter and getter =====
 	public int getId() {
 		return id;
 	}
