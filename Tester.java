@@ -105,11 +105,11 @@ public class Tester {
 							System.out.println(ANSI_RED +"==================>> Student Details <<=====================");
 							System.out.println(">> Student name is : " + s.getName());
 							System.out.println(">> Student id is : :" + s.getId());
-							System.out.println("==================### Course List ###=====================");
+							System.out.println("==================###... Course List ...###=====================");
 							for (Course c : s.courseList) {
 							String ANSI_CYAN = "\u001B[36m";
 
-								System.out.println(ANSI_CYAN + "==================$$$  Course Details $$$=====================");
+								System.out.println(ANSI_CYAN + "==================$$$... Course Details ...$$$=====================");
 								System.out.println(">> Course name is : " + c.getName());
 								System.out.println(">> Course type is : :" + c.getType());
 								System.out.println(">> Midterm Mark is : " + c.markCourse.getMathMark());
