@@ -4,6 +4,13 @@ public class School {
 	private int id;
 	Department department1 = new Department();
 	
+	public School() {
+		System.out.println(">>> Defulat School Details <<<");
+		this.name = "Muscat";
+		this.id = 2022 ;
+		System.out.println("School Name "+ name + " ID of school "+ id);
+		System.out.println(">>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<");
+	}
 	public String getName() {
 		return name;
 	}
