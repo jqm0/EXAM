@@ -7,8 +7,9 @@ public class Department {
 	private int Size;
 	private String location;
 	Teacher teacher1 = new Teacher();
+//arraylist of teachers object
 	ArrayList<Teacher> teacherList = new ArrayList<Teacher>();
-
+// setter and getter for instance varibales
 	public String getName() {
 		return name;
 	}
