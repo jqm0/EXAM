@@ -42,16 +42,16 @@ public class Tester {
 					System.out.print("Please Enter Student ID : ");
 					st.setId(sc.nextInt());
 					while (option4) {
-						Course c = new Course();
+						Course courseX = new Course();
 						System.out.print("Please Enter Course name : ");
-						c.setName(sc.next());
+						courseX.setName(sc.next());
 						System.out.print("Please Enter Course Type : ");
-						c.setType(sc.next());
+						courseX.setType(sc.next());
 						System.out.print("Please Enter Midterm Mark : ");
-						c.markCourse.setMathMark(sc.nextInt());
+						courseX.markCourse.setMathMark(sc.nextInt());
 						System.out.print("Please Enter Finall Mark : ");
-						c.markCourse.setPhysics(sc.nextInt());
-						st.courseList.add(c);
+						courseX.markCourse.setPhysics(sc.nextInt());
+						st.courseList.add(courseX);
 						System.out.print("Do You want add another course 1 if yes.> ");
 						if (sc.nextInt() != 1) {
 							option4 = false;
