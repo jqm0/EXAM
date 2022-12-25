@@ -14,7 +14,7 @@ public class Tester {
 		ArrayList<Department> departmentA = new ArrayList<Department>();
 		Scanner sc = new Scanner(System.in);
 		School school1 = new School();
-		System.out.println("welcome to object chaining system");
+		System.out.println(">>> welcome to object chaining system <<<");
 		System.out.print("Please Enter School Name : ");
 		school1.setName(sc.nextLine());
 		System.out.print("Please Enter School ID : ");
@@ -22,11 +22,11 @@ public class Tester {
 		while (option) {
 
 			Department dep = new Department();
-			System.out.print("Please Enter Department Name : ");
+			System.out.print(" Please Enter Department Name : ");
 			dep.setName(sc.next());
-			System.out.print("Please Enter Department size : ");
+			System.out.print(" Please Enter Department size : ");
 			dep.setdSize(sc.nextInt());
-			System.out.print("Please Enter Department location : ");
+			System.out.print(" Please Enter Department location : ");
 			dep.setLocation(sc.next());
 			while (option2) {
 
@@ -55,11 +55,9 @@ public class Tester {
 						System.out.print("Do You want add another course 1 if yes.> ");
 						if (sc.nextInt() != 1) {
 							option4 = false;
- 
 						}
 
 					}
-
 					t.studentList.add(st);
 					System.out.print("Do You want add another Student 1 if yes.> ");
 					if (sc.nextInt() != 1) {
@@ -67,7 +65,6 @@ public class Tester {
 
 					}
 					option4 = true;
-
 				}
 				dep.teacherList.add(t);
 
@@ -75,7 +72,6 @@ public class Tester {
 				option3 = true;
 				if (sc.nextInt() != 1) {
 					option2 = false;
-
 				}
 			}
 			departmentA.add(dep);
